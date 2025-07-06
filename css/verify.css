@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+main{
+    display: flex;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.left-container{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 100vh;
+    background-color: #0255D2;
+}
+
+.left-container > img{
+    width: 25%;
+    height: 25%;
+}
+
+.left-container > .title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+
+    height: 25%;
+    font-size: 100%;
+}
+
+.right-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100vh;
+}
+
+.verify-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    background-color: #f5f5f5;
+    width: 60%;
+    height: 50%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 2%;
+}
+
+.verify-card > .title-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 25%;
+    font-size: 80%;
+}
+
+.verify-card > .title-card > h1{
+    font-size: 3.5vh;
+    color: #0255D2;
+}
+
+.verify-card > .title-card > p{
+    font-size: 1.5vh;
+    color: red;
+}
+
+.verify-card > .inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5vh; 
+}
+
+input{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+}
+
+label{
+    font-weight: 600;
+}
+
+.verify-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.verify-button > button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 2%;
+    border: none;
+    border-radius: 5px;
+    background-color: #0255D2;
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+a{
+    color: #0255D2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media (max-width: 789px) {
+
+    main {
+        flex-direction: column;
+    }
+
+    .left-container{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 30vh;
+    }
+
+    .right-container{
+        height: 70vh;
+        width: 100%;
+    }
+
+    .left-container > img {
+        width: 20%;
+        height: 50%;
+    }
+
+    .verify-card{
+        width: 80%;
+        height: 70%;
+    }
+
+    .verify-card > .title-card{
+        flex-direction: column;
+        align-items: center;
+    }
+}
