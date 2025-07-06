@@ -80,7 +80,6 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
 
     padding: 2%;
     border: none;
@@ -105,8 +104,15 @@ label{
 
 .register-button{
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
+}
+
+.register-button > p{
+    color: red;
+    font-size: 50%;
+    font-weight: 600;
 }
 
 @media (max-width: 789px) {
@@ -143,6 +149,6 @@ label{
     }
 
     .register-button{
-        justify-content: center;
+        padding: 2%;
     }
 }
