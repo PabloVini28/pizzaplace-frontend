@@ -151,5 +151,6 @@ a{
     .verify-card > .title-card{
         flex-direction: column;
         align-items: center;
+        text-align: center;
     }
 }
