@@ -1,0 +1,370 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: #0255D2;
+    padding: 1%;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo > img{
+    width: 30%;
+}
+
+.logo > .title{
+    font-family: 'Nunito Sans', sans-serif;
+    color: #fff;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+}
+
+nav > ul{
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+nav > ul > li > a{
+    font-family: 'Nunito Sans', sans-serif;
+    color: #fff;
+    font-weight: 600;
+    text-underline-offset: 0.2rem;
+}
+
+nav > ul > li > a:hover{
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.profile-icon > img{
+    width: 40px;
+    height: auto;
+    cursor: pointer;
+}
+
+.profile-icon > img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+main{
+    display: flex;
+    width: 100%;
+    background-color: #F0F0F0;
+}
+
+main > .menu{
+    display: flex;
+    flex-direction: column;
+    width: 73%;
+    background-color: #fff;
+    padding: 2%;
+}
+
+main > .menu > .title-pizzas{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.2rem;
+    color: #0255D2;
+    padding: 0.2rem;
+}
+
+main > .menu > .pizzas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+main > .menu > .pizzas > .food-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 30%;
+    background-color: #F0F0F0;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+main > .menu > .pizzas > .food-item:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+main > .menu > .fogacas > .food-item:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+.food-item > h2{
+    font-family: 'Nunito Sans', sans-serif;
+    color: #0255D2;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.food-item > p{
+    font-family: 'Nunito Sans', sans-serif;
+    color: #333;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.food-item > button{
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #0255D2;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+main > .menu > .fogacas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+main > .menu > .fogacas > .food-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 30%;
+    background-color: #F0F0F0;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+main > .menu > .title-fogacas{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.2rem;
+    color: #0255D2;
+    padding: 0.2rem;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 27%;
+    padding: 1.2%;
+    gap: 1rem; /* Espaço entre os elementos do aside */
+}
+
+aside > .order-title {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1rem;
+    color: #0255D2;
+    margin-bottom: 0.5rem;
+}
+
+.order-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    margin-bottom: 1rem;
+}
+
+.order-card {
+    background: #f8fafc;
+    border: 1px solid #0255D2;
+    border-radius: 8px;
+    padding: 0.7rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 1px 3px rgba(2,85,210,0.07);
+}
+
+.order-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+}
+
+.order-info h3 {
+    font-size: 1rem;
+    color: #0255D2;
+    margin: 0;
+}
+
+.order-info .quantity {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.order-info p {
+    margin: 0;
+    color: #333;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.order-card button {
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.2rem 0.6rem;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+    transition: background 0.2s;
+}
+
+.order-card button:hover {
+    background: #c0392b;
+}
+
+.order-info .increase,
+.order-info .decrease {
+    background: #0255D2;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 0.1rem 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.order-info .increase:hover,
+.order-info .decrease:hover {
+    background: #023a8f;
+}
+
+aside > .order-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+aside > .order-button > button{
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #0255D2;
+    color: #fff;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+aside > .order-button > p{
+    font-family: 'Nunito Sans', sans-serif;
+    color: #333;
+    font-size: 0.9rem;
+    font-weight: 600;
+} 
+
+aside > .order-button > button:hover{
+    background-color: #023a8f;
+    transition: background-color 0.3s;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 20%;
+    background-color: #0255D2;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 2%;
+}
+
+footer > p{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 60%;
+    color: #fff;
+}
+
+@media (max-width: 789px) {
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    .logo > img{
+        width: 30%;
+    }
+
+    nav > ul{
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    main > .menu{
+        width: 60%;
+    }
+
+    main > .menu > .pizzas{
+        width: auto;
+        flex-direction: column;
+    }
+
+    main > .menu > .pizzas > .food-item{
+        width: 80%;
+    }
+
+    main > .menu > .fogacas{
+        width: auto;
+        flex-direction: column;
+    }
+
+    main > .menu > .fogacas > .food-item{
+        width: 80%;
+    }
+
+    aside {
+        width: 40%;
+    }
+
+    aside > .order-title{
+        font-size: 0.8rem;
+    }
+
+    aside > .order-button{
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    footer{
+        height: auto;
+        padding: 1%;
+    }
+}
