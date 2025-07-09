@@ -103,10 +103,6 @@ main{
     margin-bottom: 1.5rem;
 }
 
-.menu-toggle{
-    display: none;
-}
-
 footer{
     display: flex;
     flex-direction: column;
