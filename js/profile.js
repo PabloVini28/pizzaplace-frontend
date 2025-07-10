@@ -19,7 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const token = localStorage.getItem('token');
     if (token) {
         const payload = parseJwt(token);
-        console.log('Payload do token:', payload);
 
         const role = payload?.role;
 
@@ -49,14 +48,16 @@ function tokenExpirado(decodedToken) {
 
 function renderizarPerfil(user) {
     const profileDiv = document.querySelector('.profile');
+    console.log(user);
     profileDiv.innerHTML = `
-        <h2>Dados do Usuário</h2>
+        <h2 class="user-data">Dados do Usuário</h2>
         <div class="profile-card">
             <p><strong>ID:</strong> ${user.id}</p>
             <p><strong>Nome:</strong> ${user.name}</p>
             <p><strong>Username:</strong> ${user.username}</p>
             <p><strong>Email:</strong> ${user.email}</p>
             <p><strong>Endereço:</strong> ${user.address}</p>
+            <p><strong>Telefone:</strong> ${user.phoneNumber}</p>
         </div>
 
         <div class="buttons">
