@@ -56,13 +56,13 @@ nav > ul > li > a:hover{
     transition: 0.5s;
 }
 
-.profile-icon > img{
+.profile-icon > a > img{
     width: 40px;
     height: auto;
     cursor: pointer;
 }
 
-.profile-icon > img:hover{
+.profile-icon > a > img:hover{
     transform: scale(1.1);
     transition: 0.5s;
 }
