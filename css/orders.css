@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: #0255D2;
+    padding: 1%;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo > img{
+    width: 30%;
+}
+
+.logo > .title{
+    font-family: 'Nunito Sans', sans-serif;
+    color: #fff;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+}
+
+nav > ul{
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+nav > ul > li > a{
+    font-family: 'Nunito Sans', sans-serif;
+    color: #fff;
+    font-weight: 600;
+    text-underline-offset: 0.2rem;
+}
+
+nav > ul > li > a:hover{
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.profile-icon > a > img{
+    width: 40px;
+    height: auto;
+    cursor: pointer;
+}
+
+.profile-icon > a > img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+main{
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    width: 27%;
+    height: auto;
+    background-color: #f0f0f0;
+    padding: 2%;
+}
+
+aside > .card-aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+aside > .card-aside > p{
+    font-family: 'Nunito Sans', sans-serif;
+    color: #0255D2;
+    margin-bottom: 1rem;
+}
+
+
+.orders {
+    flex: 1;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.order-card {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-left: 8px solid #0255D2;
+}
+
+.order-card h3 {
+    color: #0255D2;
+    margin-bottom: 0.5rem;
+}
+
+.order-card p {
+    margin: 0.3rem 0;
+    color: #333;
+    font-size: 1vw;
+}
+
+.order-card strong {
+    color: #000;
+}
+
+.status-buttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.btn-status {
+    background-color: #0255D2;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 0.9vw;
+}
+
+.btn-status:hover {
+    background-color: #013e9c;
+}
+
+.btn-delete {
+    background-color: #e63946;
+    color: white;
+    border: none;
+    padding: 0.5vw 1vw;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1vw;
+    transition: background-color 0.3s;
+}
+
+.btn-delete:hover {
+    background-color: #a4161a;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 20%;
+    background-color: #0255D2;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 2%;
+}
+
+footer > p{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 60%;
+    color: #fff;
+}
+
+@media (max-width: 789px) {
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    .logo > img{
+        width: 30%;
+    }
+
+    nav > ul{
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    main{
+        flex-direction: column;
+    }
+
+    aside{
+        display: none;
+    }
+
+    .orders{
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .order-card h3{
+        font-size: 1.2rem;
+    }
+
+    .order-card p{
+        font-size: 0.9rem;
+    }
+
+    .status-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .status-buttons button {
+        font-size: 0.9rem;
+    }
+
+    .btn-delete{
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+    }
+
+    footer{
+        height: auto;
+        padding: 1%;
+    }
+}

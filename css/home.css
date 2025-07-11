@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: #0255D2;
+    padding: 1%;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo > img{
+    width: 30%;
+}
+
+.logo > .title{
+    font-family: 'Nunito Sans', sans-serif;
+    color: #fff;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+}
+
+nav > ul{
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+nav > ul > li > a{
+    font-family: 'Nunito Sans', sans-serif;
+    color: #fff;
+    font-weight: 600;
+    text-underline-offset: 0.2rem;
+}
+
+nav > ul > li > a:hover{
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.profile-icon > a > img{
+    width: 40px;
+    height: auto;
+    cursor: pointer;
+}
+
+.profile-icon > a > img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+main{
+    width: 100%;
+    height: auto;
+
+    padding: 2.1%;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.cards > .card-item{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+.cards > .card-item > h2{
+    font-family: 'Nunito Sans', sans-serif;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.cards > .card-item > p{
+    font-family: 'Nunito Sans', sans-serif;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 20%;
+    background-color: #0255D2;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 2%;
+}
+
+footer > p{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 60%;
+    color: #fff;
+}
+
+@media (max-width: 789px) {
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    .logo > img{
+        width: 30%;
+    }
+
+    nav > ul{
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .cards{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards > .card-item{
+        width: 90%;
+    }
+
+    footer{
+        height: auto;
+        padding: 1%;
+    }
+}

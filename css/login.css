@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+main{
+    display: flex;
+}
+
+.left-container{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 100vh;
+    background-color: #0255D2;
+}
+
+.left-container > img{
+    width: 25%;
+    height: 25%;
+}
+
+.left-container > .title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+
+    height: 25%;
+    font-size: 100%;
+}
+
+.right-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100vh;
+}
+
+.login-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    background-color: #F5F5F5;
+    height: 60%;
+    width: 70%;
+    padding: 5%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.login-card > .title-card{
+    display: flex;
+    width: 85%;
+}
+
+.login-card > .inputs{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+input{
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+label{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+}
+
+.default-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20%;
+}
+
+button{
+    padding: 2%;
+    border: none;
+    border-radius: 5px;
+    background-color: #0255D2;
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: #0255D2;
+}
+
+.register-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 789px) {
+
+    main {
+        flex-direction: column;
+    }
+
+    .left-container{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 30vh;
+    }
+
+    .right-container{
+        height: 70vh;
+        width: 100%;
+    }
+
+    .left-container > img {
+        width: 20%;
+        height: 50%;
+    }
+
+    .login-card {
+        width: 90%;
+        height: 80%;
+    }
+    
+    .login-card > .title-card {
+        width: 100%;
+    }
+}
